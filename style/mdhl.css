@@ -1,0 +1,615 @@
+/*-------GLOBAL-------*/
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+* {
+    margin: 0; padding: 0;box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url("../imagenes/fondo3.jpg");
+}
+
+/*-------HEADER-------*/
+
+img[src="./imagenes/Logo.png"] {
+    width: 4rem;
+    height: 4rem;
+}
+
+.side-logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color: rgba(255, 255, 255, 0.329);
+    width: 100%;
+    opacity: 0.85;
+}
+
+nav {
+    align-self: center;
+}
+
+nav a {
+    background-color: gold;
+    color: #2596be;
+    text-decoration: none;
+    margin-right: .5rem;
+    padding: 6px;
+    border-radius: .50rem;
+    border: 2px solid black;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 3.5em;
+    letter-spacing: .3em;
+    color:rgb(250, 246, 25);
+    text-shadow: -2px 1px 5px rgb(228, 228, 228, 255), -2px 1px 5px rgb(120, 0, 0, 200), -2px 1px 5px rgb(228, 228, 228, 255);
+}
+
+h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    background-color: black;
+    color: white;
+    -webkit-text-stroke: 0.1px #5fa199;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px inset gold;
+    padding: 5px; 
+}
+
+.head {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #081F58;
+    min-width: 700px;
+    height: 12rem;
+    
+}
+
+.head2 {
+    width: 80%;
+    height: 10rem;
+    margin-left: 12rem;
+    margin-bottom: 1.8rem;
+}
+
+.encabezado {
+    background-color: #081F58;
+}
+
+/*-------MAIN-------*/
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+
+img[src="./imagenes/design1_image1.jpg"] {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 3rem;
+    object-fit: cover;
+}
+
+img[src="./imagenes/design2_image1.jpg"] {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 3rem;
+    object-fit: cover;
+}
+
+.cuerpo {
+    height: 92%;
+    display: flex;
+}
+
+/*-------INDEX-------*/
+
+.section-one {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+article h3 {
+    text-decoration: double underline yellow;
+}
+
+article p {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#index-home {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.index-one, .index-two, .index-three {
+    height: 14vh;
+    width: 40vw;
+    align-items: center;
+    background-color: rgba(54, 230, 148, 40%);
+    padding: 1rem;
+    /* BORDER RADIUS */
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid black;
+    /* BOX SHADOW */
+    -webkit-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+}
+
+.flex-imagenes {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/*-------ABOUT-------*/
+.section-two {
+    height: 35rem;
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.text2 {
+    align-content: center;
+    width: 25%;
+    margin-left: 45rem;
+    margin-top: 3rem;
+    background-color: rgba(54, 230, 148, 40%);
+    padding: 1rem;
+    /* BORDER RADIUS */
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid black;
+    /* BOX SHADOW */
+    -webkit-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+}
+
+.text2 p {
+    text-align: justify;
+    padding-top: 1rem;
+}
+
+
+/*-------GAME INFO-------*/
+
+.container-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 70vh;
+}
+
+.class-game {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    width: 40%;
+    background-color: rgba(54, 230, 148, 40%);
+    padding: 1rem;
+    /* BORDER RADIUS */
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid black;
+    /* BOX SHADOW */
+    -webkit-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+}
+
+.fall-text { 
+    margin-left: 15%;
+    color: #081F58;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.5em;
+    text-decoration: underline black;
+}
+
+.aligntext {
+    display: flex;
+    justify-content: center;
+}
+
+.aligntext p {
+    margin-left: 0.8rem;
+}
+
+.text-facility {
+    border-radius: 50px 0px 50px 0px;
+    -moz-border-radius: 50px 0px 50px 0px;
+    -webkit-border-radius: 50px 0px 50px 0px;
+    border: 2px solid #000000;
+    margin-top: 2%;
+}
+
+.text-phone {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.left-email{
+    text-align: center;
+    display: flex;
+    margin-left: 8%;
+}
+
+.text-phone p {
+    margin-left: 1rem;
+}
+
+table,tr,th,td{
+    padding: 5px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table caption {
+	caption-side: top;
+	text-align: left;
+	margin-bottom: 0.5rem;
+	font-style: italic;
+	font-weight: 900;
+	font-size: small;
+}
+
+tbody {
+	text-align: center;
+}
+
+tbody tr {
+	background-color: #EFFFFD;
+	color: black;
+} 
+
+thead {
+    background-color: #42C2FF;
+    color: aliceblue;
+}
+
+/* COLGROUP */
+
+.month {
+    width: 3rem;
+}
+
+.tlocation{
+    width: 10rem;
+}
+
+.hour{
+    width: 6rem;
+}
+
+/*-------REGISTRATION-------*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 2%;
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    min-height: 70vh;
+}
+
+.class-form {
+    margin-top: 1%;
+    display: flex;
+    justify-content: flex-start;
+    height: 90vh;
+    width: 80vw;
+    margin-left: 45%;
+    background-color: rgba(54, 230, 148, 40%);
+    padding: 1rem;
+    /* BORDER RADIUS */
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid black;
+    /* BOX SHADOW */
+    -webkit-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+}
+
+.checkbox {
+    width: 12rem;
+    margin-left: 1rem;
+}
+
+.f1-school, .f1-position, .f1-size {
+    display: flex;
+    align-items: center;
+}
+
+.f-school, .f-position, .f-size {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset{
+    margin-top: 1%;
+    border: none;
+}
+
+#submit {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px 10px 20px 0;
+    border: 1px solid #ccc;
+    background: #eee;
+    border-radius: 8px 8px 8px 8px;
+}
+
+#submit:hover {
+    background: #ddd;
+}
+
+input {
+    caret-color: yellow;
+}
+
+.f-text {
+    width: 21rem;
+}
+
+input:focus, textarea:focus {
+    background   : rgba(0,0,0,.1);
+    border-radius: 5px;
+    outline      : none;
+}
+
+/*-------RULES-------*/
+
+.h3-box>h3 {
+    text-align: center;
+    padding-top: 0.5rem;
+    color: black;
+    font-weight: normal;
+    font-family: Arial;
+    text-transform: lowercase;
+}
+
+.h3-box {
+    /* background-color: rgb(8, 31, 88); */
+    width: 30%;
+    height: 5%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-top: 1%;
+    margin-left: 35%;
+    background-color: rgba(133, 244, 255, 40%);
+    /* BORDER RADIUS */
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid black;
+    /* BOX SHADOW */
+    -webkit-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+}
+
+.sportsman {
+    height: 17vh;
+    background-color: #5fa199;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: min(100% - 10rem, 70rem);
+	margin-inline: auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    background-color: rgba(133, 244, 255, 40%);
+    padding: 2rem;
+    /* BORDER RADIUS */
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid black;
+    /* BOX SHADOW */
+    -webkit-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+}
+
+.field-reg {
+    height: 30vh;
+    background-color: #5fa199;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: min(100% - 10rem, 70rem);
+	margin-inline: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    background-color: rgba(133, 244, 255, 40%);
+    padding: 1rem;
+    /* BORDER RADIUS */
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid black;
+    /* BOX SHADOW */
+    -webkit-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+}
+
+.all-play {
+    height: 17vh;
+    background-color: #5fa199;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: min(100% - 10rem, 70rem);
+	margin-inline: auto;
+    margin-top: 1rem;
+    align-items: center;
+    background-color: rgba(133, 244, 255, 40%);
+    padding: 1rem;
+    /* BORDER RADIUS */
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid black;
+    /* BOX SHADOW */
+    -webkit-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+}
+
+li {
+    line-height: 1.3;
+}
+
+dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+    
+}
+
+.list-field li::marker {
+    font-weight: bold;
+}
+
+.list-field2 li::marker {
+    font-style: italic;
+    color: rgb(18, 156, 41);
+}
+
+ol, ul {
+    width: 50vw;
+}
+
+ul li {
+    list-style: disc;
+}
+
+/*-------CONTACT-------*/
+
+.section-mail {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.7rem;
+}
+
+.carrousel-mail {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.8rem;
+}
+
+.carrousel-image {
+    width: 30vw;
+    height: 30vh;
+    position: relative;
+    object-fit: cover;
+    border-radius: 0.7rem;
+}
+
+#mail p {
+    font-size: 1.7em;
+}
+
+/*------- MAIL -------*/
+
+.art-mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    height: 250px;
+    width: 620px;
+    color: white;
+    text-align: center;
+    transition: height 0.6s, width 0.6s;
+
+    background-color: rgba(54, 230, 148, 40%);
+    padding: 1rem;
+    /* BORDER RADIUS */
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid black;
+    /* BOX SHADOW */
+    -webkit-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 18px 5px rgba(0,0,0,0.75);
+}
+
+.art-mail:hover {
+    cursor: pointer;
+    height: 350px;
+    width: 700px;
+}
+
+.section-mail p {
+    padding-bottom: 18px; 
+    font-weight: bolder; 
+}
+
+/*-------FOOTER-------*/
+
+footer {
+    background-color: rgb(29, 27, 27);
+    /* height: 10%; */
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
